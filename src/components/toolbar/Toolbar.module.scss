@@ -1,0 +1,13 @@
+.toolbarWrapper {
+    border-bottom: 1px solid #c5c7d0;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+
+    & .withToolbarInner {
+        padding: 7px;
+        display: flex;
+        flex-direction: row;
+    }
+}

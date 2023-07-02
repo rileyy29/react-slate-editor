@@ -1,0 +1,46 @@
+.editorWrapper {
+    height: 100%;
+    width: 100%;
+
+    &>div[contenteditable="true"] {
+        padding: 18px;
+        height: 100%;
+        width: 100%;
+
+        & .slateImageWrapper {
+            display: inline-block;
+            position: relative;
+            max-width: 100%;
+            max-height: 100%;
+            padding-right: 4px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+
+            & .withImage {
+                max-width: 100% !important;
+                width: auto;
+                overflow: hidden;
+                height: auto !important;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &.withResizing {
+                    outline: 5px solid rgba(0, 125, 255, 0.5) !important;
+                }
+            }
+
+            & .withResizeHandle {
+                width: 13px;
+                height: 13px;
+                background-color: rgba(0, 125, 255, 0.9);
+                position: absolute;
+                bottom: -1px;
+                right: -5px;
+                cursor: nwse-resize;
+                border: 1px solid #fff;
+            }
+        }
+    }
+}

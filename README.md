@@ -1,0 +1,1 @@
+Package built with the React Slate Framework intended to explore the creation of a Rich Text Editor with support for inline images.
